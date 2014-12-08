@@ -4,7 +4,7 @@ obj_file$Date <- as.Date(obj_file$Date, format = "%d/%m/%Y")
 obj_file <- subset(obj_file, subset = (Date == "2007-02-01" | Date == "2007-02-02"))
 
 library(datasets)
-par(mar = c(5,5,2,2))
+par(mar = c(5,5,2,2), family= "LiHei Pro")
 hist(obj_file$Global_active_power,
 	main = "Global Active Power",
 	xlab = "Global Active Power(kilowatts)", 
